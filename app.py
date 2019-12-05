@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from controller.db_operation import Check
+from controller.db_operation import Check, Select
 
 
 app = Flask(__name__)
@@ -28,7 +28,14 @@ def login():
     if request.method == 'POST':
         username = request.form.get('username')
         password = request.form.get('password')
-        check_info = Check().check_info(username, password)
+        user_info = Select().select(username, password)
+
+        # user permission level
+        user_permiission = user_info[0]
+
+        # user information check result.
+        check_info = user_info[1]
+
     else:
         username = '0'
         password = '0'
