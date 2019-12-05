@@ -24,18 +24,26 @@ def index():
 def login():
     username = ''
     password = ''
+
+    """
+    user information check result. (True or False)
+    default setting is False
+    """
     check_info = False
     if request.method == 'POST':
         username = request.form.get('username')
         password = request.form.get('password')
         user_info = Select().select(username, password)
 
-        # user permission level
-        user_permiission = user_info[0]
+        """
+        user permission level.
+        decide the web page information that the user can see. (0 1 2, up to low)
+        """
+        user_permission = user_info[0]
 
-        # user information check result.
         check_info = user_info[1]
 
+    # GET method remains to be completed...
     else:
         username = '0'
         password = '0'
