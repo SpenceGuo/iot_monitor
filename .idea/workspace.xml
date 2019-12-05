@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="14e83198-ce1e-47ea-a467-a350649af164" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/db_operation.py" beforeDir="false" afterPath="$PROJECT_DIR$/controller/db_operation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dbtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/dbtest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/mysql_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/mysql_helper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/failed.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/failed.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login/sign_in.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login/sign_in.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login/sign_up.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login/sign_up.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/success.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +47,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.dbtest">
+  <component name="RunManager" selected="Python.app">
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="iot_monitor" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -102,8 +94,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.dbtest" />
         <item itemvalue="Python.app" />
+        <item itemvalue="Python.dbtest" />
       </list>
     </recent_temporary>
   </component>
@@ -118,7 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1575541411041</updated>
       <workItem from="1575541413447" duration="545000" />
-      <workItem from="1575542503527" duration="7906000" />
+      <workItem from="1575542503527" duration="8524000" />
     </task>
     <servers />
   </component>
@@ -159,6 +151,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/iot_monitor$dbtest.coverage" NAME="dbtest Coverage Results" MODIFIED="1575550429617" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/iot_monitor$app.coverage" NAME="app Coverage Results" MODIFIED="1575547771772" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/iot_monitor$app.coverage" NAME="app Coverage Results" MODIFIED="1575551020399" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
