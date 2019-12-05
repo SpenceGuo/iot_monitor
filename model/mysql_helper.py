@@ -12,17 +12,6 @@ class MysqlHelper:
     # 构造函数
     # def __init__(self):
 
-    # the first speak function, just for testing...
-    def speak(self):
-        sql = 'SELECT * FROM ' + config.tbname
-        # 打开数据库连接
-        db = pymysql.connect(config.host, config.username, config.password, config.database)
-        cursor = db.cursor()
-        cursor.execute(sql)
-        data = cursor.fetchall()
-        return data
-        db.close()
-
     # rewrite the speak function... this function need two parameters
     def speak(self, username, password):
         # get the sql...
@@ -31,8 +20,21 @@ class MysqlHelper:
         cursor = db.cursor()
         cursor.execute(sql)
         data = cursor.fetchall()
-        return data
         db.close()
+        return data
+
+    def speak(self, sql):
+        db = pymysql.connect(config.host, config.username, config.password, config.database)
+        cursor = db.cursor()
+        try:
+            cursor.execute(sql)
+            db.commit()
+            db.close()
+            return True
+        except:
+            db.close()
+            return False
+
 
     # process sql automatically, remains to be finished...
     # it will be finished later...

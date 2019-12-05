@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from controller.db_operation import Check, Select
+from controller.db_operation import Check, Select, Insert
 
 
 app = Flask(__name__)
@@ -15,8 +15,27 @@ def sign_up():
     return render_template('login/sign_up.html')
 
 
+@app.route('/register', methods=['POST'])
+def register():
+    username = ''
+    password = ''
+    user_info = []
+    user_permission = '2'
+    username = request.form.get('username')
+    password = request.form.get('password')
+    user_info.append(username)
+    user_info.append(password)
+    user_info.append(user_permission)
+
+    register_result = Insert().insert(user_info)
+    if register_result:
+        return render_template('success.html')
+    else:
+        return render_template('failed.html')
+
+
 @app.route('/sign_in')
-def index():
+def sign_in():
     return render_template('login/sign_in.html')
 
 

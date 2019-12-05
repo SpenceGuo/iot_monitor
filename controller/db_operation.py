@@ -23,6 +23,19 @@ class Select:
         return result
 
 
+class Insert:
+    def insert(self, user_info=[]):
+        username = user_info[0]
+        password = user_info[1]
+        user_permission = user_info[2]
+
+        str_colon = '\''
+        sql = 'INSERT INTO users(username,password,permission)VALUES(' + str_colon + username + str_colon +\
+      ',' + str_colon + password + str_colon + ',' + str_colon + user_permission + str_colon + ')'
+        db_option = MysqlHelper().speak(sql)
+        return db_option
+
+
 class Delete:
     def delete1(self, username):
         db_option = MysqlHelper()

@@ -6,7 +6,7 @@
 <meta http-equiv="Cache-Control" content="no-cache">
 <meta http-equiv="Expires" content="0">
 <title>Sign in...</title>
-<link href="{{url_for('static',filename='css/sign_up.css')}}" rel="stylesheet" type="text/css" />
+<link href="{{url_for('static',filename='css/sign_in.css')}}" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -17,13 +17,13 @@
           <div class="login_name">
                <p>Sign up</p>
           </div>
-          <form action="/login" method="post">
+          <form action="/register" method="post">
               <input name="username" type="text" id="username" placeholder="username" />
               <input name="password" type="password" id="password" placeholder="password" />
-              <input name="invitation" type="text" placeholder="invitation code">
-              <input value="Sign in" style="width:100%;" type="submit">
+              <input value="Sign up" style="width:100%;" type="submit">
           </form>
       </div>
+      <div class="copyright">Shanghai Jiao Tong University</div>
 </div>
 <div style="text-align:center;">
 </div>
