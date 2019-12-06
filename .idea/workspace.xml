@@ -112,6 +112,8 @@
       <updated>1575541411041</updated>
       <workItem from="1575541413447" duration="545000" />
       <workItem from="1575542503527" duration="8524000" />
+      <workItem from="1575614078274" duration="260000" />
+      <workItem from="1575619784802" duration="1759000" />
     </task>
     <servers />
   </component>
@@ -123,7 +125,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -133,19 +137,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/model/mysql_helper.py</url>
-          <line>25</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/controller/db_operation.py</url>
-          <line>26</line>
+          <line>39</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/dbtest.py</url>
-          <line>40</line>
-          <option name="timeStamp" value="3" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
