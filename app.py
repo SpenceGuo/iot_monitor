@@ -56,7 +56,7 @@ def login():
 
         """
         user permission level.
-        decide the web page information that the user can see. (0 1 2, up to low)
+        decide the web page that the user can see. (0 1 2, up to low)
         """
         user_permission = user_info[0]
 
