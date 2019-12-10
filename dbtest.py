@@ -11,7 +11,7 @@ part 3 is list testing.
 """
 
 from model.mysql_helper import MysqlHelper
-from controller.db_operation import Select,Insert
+from controller.db_operation import Select, Insert
 
 # part 1
 # test = MysqlHelper()
